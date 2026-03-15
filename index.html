@@ -683,29 +683,7 @@ var el = document.getElementById(id);
 if (el) el.addEventListener(‘click’, btns[id]);
 }
 }
-if (document.readyState === ‘loading’) {
-document.addEventListener(‘DOMContentLoaded’, wireButtons);
-} else {
-wireButtons();
-}
-
-// Expose functions to global scope for onclick handlers
-window.startGame = startGame;
-window.showHistory = showHistory;
-window.hideHistory = hideHistory;
-window.confirmNew = confirmNew;
-window.showStats = showStats;
-window.prevShot = prevShot;
-window.advEnd = advEnd;
-window.recordShot = recordShot;
-window.saveES = saveES;
-window.selectScore = selectScore;
-window.closeModal = closeModal;
-window.toggleG = toggleG;
-window.delG = delG;
-window.doCSV = doCSV;
-window.doJSON = doJSON;
-window.doTXT = doTXT;
+window.addEventListener(‘load’, wireButtons);
 
 </script>
 </body>
