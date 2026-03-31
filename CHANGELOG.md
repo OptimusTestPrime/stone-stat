@@ -6,7 +6,18 @@ All notable changes to StoneStat will be documented here.
 
 ## [Unreleased]
 
------
+### Added
+- **"Management" Miss Type:** Added a new miss type to track strategic or calling errors where the physical execution (weight/line) was not the primary issue.
+
+### Changed
+- **Default Setup Toggles:** "Handle / Rotation" and "Notes" are now unchecked by default in the Game Setup screen to streamline quick-start games.
+- **Codebase Modernization:** Removed the Base64-encoded JavaScript block and moved all logic into the global scope via a standard `<script>` tag for easier debugging and version control.
+- **Template Literals:** Refactored all major DOM rendering functions (`renderEntry`, `renderSB`, `renderTeams`, `renderPips`, `renderESP`, `showStats`, `renderHist`, `renderTeamEditor`) to use ES6 template literals instead of legacy string concatenation, vastly improving code readability and maintainability.
+
+### Fixed
+- **Global Event Listeners:** Fixed an issue where UI buttons (Start Game, Help, Randomize Teams, etc.) were unresponsive due to scope isolation caused by the previous Base64 encoding structure.
+- **Typography Consistency:** Fixed missing CSS `font-family` declarations on the Game Statistics screen so headers, percentages, and legends now correctly use "Barlow Condensed" to match the rest of the application's UI.
+
 
 ## [1.0.0] - 2026-03-23
 
