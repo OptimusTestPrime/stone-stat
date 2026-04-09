@@ -335,30 +335,41 @@ header{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:
 
 <div id="help-screen" style="display:none; padding-bottom:40px;">
   
-  <div class="hdr" style="display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;align-items:center;margin-bottom:20px;">
-    <h2 style="margin:0;font-family:'Barlow Condensed',Arial,sans-serif;font-size:22px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:#8aabb8;">How to Use StoneStat</h2>
+  <div class="hdr" style="display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:12px;margin-bottom:20px;">
+    <div style="font-family:'Barlow Condensed',Arial,sans-serif;font-size:20px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:#3a9bd5;margin:0;">How to Use StoneStat</div>
     <button id="btn-hide-help" class="btn btn-outline btn-sm">Back</button>
   </div>
 
-  <div style="background:#1a2e42; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+  <div style="background:#1a2e42;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:20px 22px;margin-bottom:14px;">
     
-    <div style="font-family:'Barlow Condensed',Arial,sans-serif;font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#3a9bd5;margin-bottom:15px;">Getting Started</div>
-
-    <div style="font-size:14px;color:#8aabb8;line-height:1.6;margin-bottom:5px;">
-      <p style="margin-top:0; margin-bottom:16px;">StoneStat tracks shot-by-shot performance for two teams. Before starting, fill in the <strong style="color:#e8f4f8;">Game Setup</strong> screen:</p>
-      
-      <ul style="padding-left:20px;margin-bottom:15px;">
-        <li style="color:#3a9bd5;margin-bottom:12px;"><span style="color:#8aabb8;"><strong style="color:#e8f4f8;">Fields to Record</strong> - Choose which fields appear in the Record Shot panel. Score is always required. Handle/Rotation, Shot Type, Miss Type, and Notes can each be turned off for simpler scoring.</span></li>
-        <li style="color:#3a9bd5;margin-bottom:12px;"><span style="color:#8aabb8;"><strong style="color:#e8f4f8;">Number of Ends</strong> - Choose 4, 6, 8 or 10 ends.</span></li>
-        <li style="color:#3a9bd5;margin-bottom:12px;"><span style="color:#8aabb8;"><strong style="color:#e8f4f8;">Hammer (End 1)</strong> - Select which team has hammer in the first end.</span></li>
-        <li style="color:#3a9bd5;margin-bottom:12px;"><span style="color:#8aabb8;"><strong style="color:#e8f4f8;">Team Names and Players</strong> - Enter names for both teams and all four players (Lead, Second, Third, Skip).</span></li>
-        <li style="color:#3a9bd5;margin-bottom:12px;"><span style="color:#8aabb8;"><strong style="color:#e8f4f8;">3-Player Team</strong> - Check this box under a team if they are playing with three players (no Third). The shot distribution becomes Lead x3, Second x3, Skip x2.</span></li>
-      </ul>
-
-      <p style="margin-bottom:0;">Tap <strong style="color:#e8f4f8;">Start Game</strong> when ready.</p>
+    <div style="font-family:'Barlow Condensed',Arial Narrow,Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#5bb8f5;margin-bottom:12px;">Getting Started</div>
+    
+    <p style="font-size:14px;line-height:1.7;color:#c5dde8;margin:0 0 10px 0;">StoneStat tracks shot-by-shot performance for two teams. Before starting, fill in the <strong style="color:#e8f4f8;">Game Setup</strong> screen:</p>
+    
+    <div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;">
+      <span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Fields to Record</strong> - Choose which fields appear in the Record Shot panel. Score is always required. Handle/Rotation, Shot Type, Miss Type, and Notes can each be turned off for simpler scoring.
     </div>
     
+    <div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;">
+      <span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Number of Ends</strong> - Choose 4, 6, 8 or 10 ends.
+    </div>
+    
+    <div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;">
+      <span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Hammer (End 1)</strong> - Select which team has hammer in the first end.
+    </div>
+    
+    <div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;">
+      <span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Team Names and Players</strong> - Enter names for both teams and all four players (Lead, Second, Third, Skip).
+    </div>
+    
+    <div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;">
+      <span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">3-Player Team</strong> - Check this box under a team if they are playing with three players (no Third). The shot distribution becomes Lead x3, Second x3, Skip x2.
+    </div>
+    
+    <p style="font-size:14px;line-height:1.7;color:#c5dde8;margin:0 0 10px 0;">Tap <strong style="color:#e8f4f8;">Start Game</strong> when ready.</p>
+    
   </div>
+
 
 
   <div style="background:#1a2e42;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:20px 22px;margin-bottom:14px;"><div style="font-family:'Barlow Condensed',Arial Narrow,Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#5bb8f5;margin-bottom:12px;">Recording a Shot</div><p style="font-size:14px;line-height:1.7;color:#c5dde8;margin:0 0 10px 0;">The app follows WCF shot order automatically - non-hammer team throws first, alternating between teams. For each shot, fill in the <strong style="color:#e8f4f8;">Record Shot</strong> panel:</p><div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;"><span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Handle / Rotation</strong> - Select In-Turn or Out-Turn.</div><div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;"><span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Shot Type</strong> - Choose from Guard, Draw, Tap, Raise, Runback, Takeout, or Peel.</div><div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;"><span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Miss Type</strong> - Optionally select Heavy, Light, Wide, Tight, or Management. Heavy/Light are mutually exclusive, as are Wide/Tight.</div><div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;"><span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Score</strong> - Rate the shot 0 to 4, or X (Throwaway) for a deliberate throw-through.</div><div style="font-size:14px;line-height:1.7;color:#c5dde8;padding-left:16px;margin-bottom:6px;position:relative;"><span style="position:absolute;left:0;color:#3a9bd5;font-weight:700;">&#x2022;</span><strong style="color:#e8f4f8;">Notes</strong> - Add an optional note about the shot.</div><p style="font-size:14px;line-height:1.7;color:#c5dde8;margin:0 0 10px 0;">Tap <strong style="color:#e8f4f8;">Record Shot</strong> to save and advance. Use the <strong style="color:#e8f4f8;">Skip</strong> button (top right of the panel) to pass on recording a shot without entering any data.</p><p style="font-size:14px;line-height:1.7;color:#c5dde8;margin:0 0 10px 0;">Tap any shot dot in the player panels to jump directly to that shot for review or editing. The selected dot shows a white outline ring. Tap any empty dot to record a new shot for that position.</p></div>
